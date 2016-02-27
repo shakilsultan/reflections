@@ -1,0 +1,42 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+It was very efficient and time-saving. I was able to identify
+the issue within seconds that there was a typo but without
+diff, I would have had to go over 1000 lines of code...
+which is not only time consuming but also make me miss
+smallest error like in this case: typo.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+I don't have to worry about file backups or anything to avoid any unexpected circumstances
+such as, 1) what if your site is hacked? 2) Hosting company loses all your data and site code
+3) Any bad update or change makes the whole site crash. In any such scenario...to fully restore
+the site back to it's original shape would require use of some sort of version control.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Pros:
+
+We get full control on when our changes go live; this is helpful if we're working on any code on the live side so we don't want any changes made to the current file or else even a single misisng semi-colon
+can potentially crash the site...so we only commit by ourselves once we're sure that the code is "free" from all syntax errors.
+
+Also too many changes will make it harder for anyone else working on the project or someone who has just joined in to understand what's going on!
+
+Cons:
+
+If you forget to commit regularly especially after each logical changes, it could get alot messier.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+It's because Google Docs isn't designed for "inter-related" files; it is an Office Suite on the cloud so word processor or spreadsheets can have multiple document sections/spreadsheet tabs within each file so it treats each file separately - keeping it simple for most of its users.
+
+Git on the other hand is used for an entirely different segment.....It is for writers, coders, etc etc for whom even a single change in one file could make or break the whole novel/module/site hence they need the ability to track "related" files together so whenever a change is made, they know that they've to make relevant changes to other files as well.
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+"git log" shows all of the commits made within the project while git diff will show differences between two commits. What was added and removed etc.
+
+How might using version control make you more confident to make changes that could break something?
+
+The ability to revert back is perhaps one of the best features of the version control system. You do not have to go through line-by-line rather just go to the previous version or check differences between two commits....and you can easily pick the code that caused breakage.
