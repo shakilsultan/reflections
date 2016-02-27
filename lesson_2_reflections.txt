@@ -1,0 +1,7 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+It creates a meta-data and saves file structure necessary for tracking the folder. It will not track any files as of yet unless we manually commit files. To create a repository or be able to use any project via Git, you have to initialize at some point and that point is initialized with this command "git init".
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Staging area in my opinion doesn't by default has all of the files in the folder and only those files are added which we manually add or want to commit.....this helps because some files maybe are incomplete hence they need more time for completion so we add only those files to the staging area that has some logical changes made and should be committed.
