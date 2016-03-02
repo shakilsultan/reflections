@@ -5,3 +5,23 @@ It creates a meta-data and saves file structure necessary for tracking the folde
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 Staging area in my opinion doesn't by default has all of the files in the folder and only those files are added which we manually add or want to commit.....this helps because some files maybe are incomplete hence they need more time for completion so we add only those files to the staging area that has some logical changes made and should be committed.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+Moving all "related" files together in the staging area and then making the commit, so even if we've made changes to 3 files that are inter-related in different directories....they goto a single commit.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+I am finding it awesome....just discovered how powerful branches really are....tried to switch to master branch and saw that it completely reloaded all the state from that branch (the most recent commit was made in easy-mode branch so it wasn't there) hence any changes that are experimental...we could easily make in easy-mode and not worrying about it's effects on the main branch because it is not going to mess with our original code.
+
+How do the diagrams help you visualize the branch structure?
+
+They've helped.....and by combining multiple branches and seeing their oneline log by this command: "git log --graph --oneline easy-mode masters coins", we can see all of the changes made to the project at once with their short commit messages.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The result is that we get combined result of two branches into one. If two people have worked on the same file in different branches or if changes from the experimental branch is accepted then pushing/merging makes sense.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Pros is that it will identify the changes made so it's not completely automatic as in merging without even telling what conflicts are there. It is semi-automatic...so we can review the files that have conflicts.
