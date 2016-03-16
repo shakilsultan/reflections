@@ -16,3 +16,7 @@ I would use fork when I have to get a copy of someone else's repository and make
 I would use clone when I have to save a copy of the repository locally and push/pull changes to/from it.
 
 I would treat branches as separate folders, if I am working on an experimental feature then I would rather create an experimental branch and would put all my untested changes there.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+This ensures that we always have the latest copy from the remote esp when we're collaborating so we can avoid any conflicts etc. It also helps to know what changes were made if we're about to work on something so knowing the most recent change is important.
